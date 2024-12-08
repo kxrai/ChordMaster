@@ -11,7 +11,9 @@ function SearchBar() {
       icon={<IconSearch />}
       value={searchTerm}
       onChange={(e) => setSearchTerm(e.target.value)}
-      mt="md"
+      size="lg"
+      radius="md"
+      mt="lg"
     />
   );
 }

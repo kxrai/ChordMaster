@@ -1,5 +1,5 @@
 import React from "react";
-import { Card, Text, Button } from "@mantine/core";
+import { Card, Text, Button, Stack } from "@mantine/core";
 
 function ChordCard({ chord }) {
   const playSound = () => {
@@ -8,19 +8,21 @@ function ChordCard({ chord }) {
   };
 
   return (
-    <Card shadow="md" padding="lg" radius="md" withBorder>
-      <Text size="lg" weight={600} align="center">
-        {chord.name}
-      </Text>
-      <Button
-        variant="light"
-        color="blue"
-        fullWidth
-        mt="md"
-        onClick={playSound}
-      >
-        Play Sound
-      </Button>
+    <Card shadow="md" padding="lg" radius="lg" withBorder>
+      <Stack align="center">
+        <Text size="lg" weight={700}>
+          {chord.name}
+        </Text>
+        <Button
+          variant="light"
+          color="blue"
+          radius="lg"
+          size="md"
+          onClick={playSound}
+        >
+          Play Sound
+        </Button>
+      </Stack>
     </Card>
   );
 }

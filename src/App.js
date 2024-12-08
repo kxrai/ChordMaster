@@ -1,12 +1,11 @@
 import React from "react";
-import { MantineProvider } from "@mantine/core";
 import HomePage from "./pages/HomePage";
 
 function App() {
   return (
-    <MantineProvider withGlobalStyles withNormalizeCSS>
+    <div>
       <HomePage />
-    </MantineProvider>
+    </div>
   );
 }
 
